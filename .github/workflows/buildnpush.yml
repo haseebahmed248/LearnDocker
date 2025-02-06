@@ -1,0 +1,27 @@
+# name: Some Text
+# age: 10
+# access: true
+# course:
+#     - maths
+#     - science
+# addresses:
+#     home_address:
+#         house_number: 111
+#         Street: 12
+#     office_address:
+#         house_number: 111
+#         Street: 12
+
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4 #Clone the repo on a single cmd
