@@ -30,6 +30,6 @@ jobs:
       - name: Build the docker image
         run: docker build -t first-app:latest .
       - name: Tag the image
-        run: docker tag express-app:latest haseebahmed3/express-app:latest
+        run: docker tag first-app:latest haseebahmed3/express-app:latest
       - name: Push the image
         run: docker push haseebahmed3/express-app:latest
